@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8" />
+  <title>My Unhock</title>
+  <link rel="stylesheet" href="popup.css" />
+</head>
+<body>
+  <h3>My Unhock</h3>
+
+  <fieldset>
+    <legend>Master</legend>
+    <label><input type="checkbox" id="enabled" checked /> Enable</label>
+    <button id="snooze10" title="Temporarily disable for 10 minutes">Snooze 10m</button>
+  </fieldset>
+
+  <fieldset>
+    <legend>Mode</legend>
+    <label><input type="radio" name="mode" value="css" checked /> CSS-only (hide)</label>
+    <label><input type="radio" name="mode" value="remove" /> Removal (delete)</label>
+  </fieldset>
+
+  <fieldset>
+    <legend>Elements</legend>
+    <label><input type="checkbox" id="reels" checked /> Reels</label>
+    <label><input type="checkbox" id="suggested" checked /> Suggested</label>
+    <label><input type="checkbox" id="homepage" checked /> Homepage Suggestions</label>
+    <label><input type="checkbox" id="explore" checked /> Explore</label>
+    <label><input type="checkbox" id="stories" checked /> Stories</label>
+    <label><input type="checkbox" id="sidebar" checked /> Sidebar</label>
+  </fieldset>
+
+  <fieldset>
+    <legend>Allowlist (usernames)</legend>
+    <small>Comma-separated, no @ (e.g. nasa,who)</small>
+    <input id="allowlist" type="text" placeholder="user1,user2" />
+  </fieldset>
+
+  <fieldset>
+    <legend>Advanced</legend>
+    <label><input type="checkbox" id="debug" /> Debug log</label>
+  </fieldset>
+
+  <fieldset>
+    <legend>Backup</legend>
+    <button id="export">Export</button>
+    <input id="import" type="file" accept="application/json" />
+  </fieldset>
+
+  <p class="hint">Shortcut: Alt+Shift+H to toggle globally.</p>
+
+  <script src="popup.js"></script>
+</body>
+</html>

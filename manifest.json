@@ -1,0 +1,28 @@
+{
+  "manifest_version": 3,
+  "name": "Unhook Instagram",
+  "version": "1.0",
+  "description": "إخفاء Reels و Explore و المقترحات في Instagram بطريقة احترافية مثل Unhook",
+
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "unhook-instagram@example.com"
+    }
+  },
+
+  "permissions": [
+    "storage"
+  ],
+
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Unhook Instagram"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["*://*.instagram.com/*"],
+      "js": ["content.js"]
+    }
+  ]
+}

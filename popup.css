@@ -1,0 +1,16 @@
+body { font-family: system-ui, Arial, sans-serif; margin: 10px; width: 280px; }
+h3 { margin: 0 0 8px; }
+fieldset { border: 1px solid #ccc; border-radius: 8px; padding: 8px; margin: 8px 0; }
+legend { padding: 0 6px; font-weight: 600; }
+label { display: block; margin: 6px 0; }
+input[type="text"] { width: 100%; box-sizing: border-box; padding: 6px; border-radius: 6px; border: 1px solid #bbb; }
+button { background: #0060df; border: 0; color: #fff; padding: 6px 10px; border-radius: 6px; cursor: pointer; }
+button:hover { filter: brightness(1.05); }
+.hint { color: #666; font-size: 12px; }
+
+@media (prefers-color-scheme: dark) {
+  body { background: #121212; color: #eee; }
+  fieldset { border-color: #333; }
+  input[type="text"] { background: #1c1c1c; color: #eee; border-color: #444; }
+  button { background: #3388ff; }
+}
